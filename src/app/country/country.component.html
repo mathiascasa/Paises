@@ -1,0 +1,30 @@
+<div class="countryStats">
+  <div class="infoCard" *ngIf="countrySelected != undefined">
+    <img [src]="countrySelected.flag" alt="{{countrySelected.Name}} + flag" />
+    <p class="title">
+      {{countrySelected.name}}
+    </p>
+    <p class="stats">
+      <span>Capital: </span> {{countrySelected.capital}}
+    </p>
+
+    <p class="stats">
+      <span>Población: </span>{{countrySelected.population | number}}
+    </p>
+    <p class="stats">
+      <span>Area: </span>{{countrySelected.area | number}}
+    </p>
+    <p class="stats">
+      <span>Moneda<b *ngIf="countrySelected.currencies.length > 1">s</b>: </span>
+    </p>
+    <ul>
+      <li *ngFor="let curr of countrySelected.currencies; let i = index">- {{curr.name}}</li>
+    </ul>
+    <p class="stats">
+      <span>Idioma<b *ngIf="countrySelected.languages.length > 1">s</b>:</span>
+    </p>
+    <ul>
+      <li *ngFor="let lang of countrySelected.languages; let i = index">- {{lang.name}}</li>
+    </ul>
+  </div>
+</div>

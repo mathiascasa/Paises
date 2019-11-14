@@ -1,0 +1,13 @@
+<div class="countries">
+  <div class="text-center col-md-12">
+    <h2 class="header">SELECIONE UN PAIS</h2>
+  </div>
+  <div class="item col-md-3" *ngFor="let country of regionCountries; let i = index">
+    <a [routerLink]="['/country/' + country.alpha3Code]">
+      <img [src]="country.flag" alt="{{country.name + 'flag'}}" />
+      <p class="country">
+        {{country.name}}
+      </p>
+    </a>
+  </div>
+</div>

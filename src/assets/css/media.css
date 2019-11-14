@@ -1,0 +1,108 @@
+@media only screen and (max-width: 1480px) {
+}
+@media only screen and (max-width: 1200px) {
+  .regions .item {
+    height: 170px;
+  }
+  h2.title {
+    font-size: 20px;
+  }
+  h3.description {
+    font-size: 14px;
+  }
+  p.number {
+    font-size: 50px;
+    bottom: -14px;
+  }
+  p.country {
+    font-size: 18px;
+  }
+
+}
+@media only screen and (max-width: 992px) {
+  .regions .item {
+    height: 150px;
+    flex: 0 0 22%;
+    max-width: 22%;
+  }
+
+  h3.description {
+    font-size: 13px;
+  }
+
+  .countries .item a img {
+    max-height: 110px;
+    padding-top: 15px;
+    max-width: 100%;
+    margin-bottom: 60px;
+  }
+
+  p.country {
+    font-size: 17px;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    left: 0;
+    right: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .regions .item {
+    height: 150px;
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .regions h3.description {
+    display: none;
+  }
+  p.number {
+    position: relative;
+    top: unset;
+    bottom: unset;
+    margin-bottom: 0
+  }
+    p.number span {
+      top: -13px;
+    }
+  .regions .item {
+    height: auto;
+    flex: 100%;
+    max-width: 100%;
+  }
+  .countries .item {
+    max-width: 50%;
+    min-width: 45%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  h2.header {
+    font-size: 21px;
+  }
+  .countries .item {
+    max-width: 100%;
+    min-width: 100%;
+  }
+    .countries .item a img {
+      max-width: 100%;
+      margin-bottom: 0;
+      width: 100%;
+      height: auto;
+      max-height: unset;
+      padding: 0;
+    }
+  p.country {
+    position: relative;
+    font-size: 1.3em;
+  }
+  .countryStats .infoCard {
+    width: 96%;
+    margin: 0 5px;
+  }
+    .countryStats .infoCard img {
+      padding: 15px;
+      width: 300px;
+      max-width: 100%;
+    }
+}
+

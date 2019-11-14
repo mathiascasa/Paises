@@ -1,0 +1,7 @@
+<div class="col-sm-12">
+  <a [routerLink]="['/']">Inicio</a>
+  <span *ngIf="globals.regionSelected != ''">></span>
+  <a [routerLink]="['/region/' + globals.regionSelected]">{{globals.regionSelected}}</a>
+  <span *ngIf="globals.countrySelected != ''">></span>
+  <a href="#">{{globals.countrySelected}}</a>
+</div>

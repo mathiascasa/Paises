@@ -1,0 +1,59 @@
+a:hover {
+  text-decoration: none !important;
+}
+
+h2.title {
+  background: black;
+  color: #ffffff;
+  margin: 0;
+  padding: 10px;
+  line-height: 1;
+}
+
+  h2.title span {
+    font-weight: normal;
+    font-size: 15px;
+  }
+
+h3.description {
+  font-size: 15px;
+  color: #000000;
+  padding: 5px;
+}
+
+p.number {
+  font-size: 60px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  color: #007bff;
+}
+
+  p.number span {
+    font-size: 15px;
+    display: block;
+    color: #333;
+    position: relative;
+    top: 2px;
+  }
+
+p.country {
+  color: #000000;
+  font-size: 23px;
+  padding: 10px;
+}
+
+.infoCard p.title {
+  padding-left: 15px;
+  font-size: 36px;
+}
+
+.infoCard p.stats {
+  border-top: 1px solid #cdcdcd;
+  padding: 5px 15px;
+  margin-bottom: 0;
+}
+  .infoCard p.stats span, .infoCard p.stats span b {
+    font-weight: bold;
+  }

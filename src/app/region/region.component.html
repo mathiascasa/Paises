@@ -1,0 +1,13 @@
+<div class="regions">
+  <div class="text-center col-md-12">
+    <h2 class="header">SELECCIONE UNA REGIÓN</h2>
+  </div>
+  <div class="item col-lg-2 col-md-3 d-inline-block" *ngFor="let region of regionalBlocs; let i = index" (click)="goToRegionCountries(region.acronym)">
+    <a>
+      <h2 class="title">{{region.acronym}} <span class="d-sm d-xl-none d-lg-none d-md-none">({{region.name}})</span></h2>
+      <h3 class="description">{{region.name}}</h3>
+      <p class="number" [countUp]="region.count"></p>
+      <p class="number"><span>Countries</span></p>
+    </a>
+  </div>
+</div>

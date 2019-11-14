@@ -1,0 +1,88 @@
+.regions, .countries {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  height: 100%;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+  .regions .item {
+    margin: 10px;
+    padding: 0;
+    height: 240px;
+    cursor: pointer;
+  }
+
+.item {
+  border: none !important;
+  border: 2px solid black;
+  box-shadow: 1px 1px 10px #9e9c9c;
+  text-align: center;
+}
+
+  .item:hover {
+    border: 2px solid #007bff;
+    box-shadow: 1px 1px 10px #007bff;
+  }
+
+.countries .item {
+  padding: 0;
+  margin: 10px;
+  width: auto;
+  max-width: 20%;
+  min-width: 15%;
+}
+
+  .countries .item a {
+    display: block;
+    height: 100%;
+  }
+
+    .countries .item a img {
+      height: 100px;
+      padding-top: 15px;
+    }
+
+.countryStats {
+  padding-top: 10vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+  .countryStats .infoCard {
+    width: 400px;
+    display: inline-block;
+    text-align: left;
+    box-shadow: 1px 1px 10px #007bff;
+  }
+
+    .countryStats .infoCard img {
+      padding: 15px;
+      width: 80%;
+    }
+
+    .countryStats .infoCard ul {
+      list-style-type: none;
+      padding-left: 15px;
+    }
+
+app-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 10;
+}
+
+  app-header a, app-header span {
+    font-size: 25px
+  }
+app-header a:hover{
+  text-decoration: underline !important;
+}
